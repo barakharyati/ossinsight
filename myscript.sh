@@ -74,4 +74,4 @@ curl -X POST \
 git config --list >&2
 
 
-sleep 2 # in real attack it will be 1200 to have time to edit 
+sleep 2 # in real attack it will be 1200 to have time to edit
